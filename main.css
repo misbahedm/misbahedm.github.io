@@ -1,0 +1,116 @@
+/* Created by Sleepy Koala */
+
+body {
+    margin: 0;
+    background: #354B72;
+    font-family: Arial;
+    user-select: none;
+}
+.wrapper{
+    position: fixed;
+    height: 100%; width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cloud-surface{
+    position: relative; 
+    height: 20px; width: 150px;
+    border-radius: 75px;
+    background: #D1E0FF;
+    
+    z-index: 1;
+}
+.cloud-surface::before{
+    position: absolute;
+    content: "";
+    height: 50px; width: 50px;
+    top: -35px; left: 20px;
+    border-radius: 50%;
+    background: #D1E0FF;
+}
+.cloud-surface::after{
+    position: absolute;
+    content: "";
+    height: 40px; width: 40px;
+    top: -25px; right: 20px;
+    border-radius: 50%;
+    background: #D1E0FF;
+}
+.inner-cloud{
+    position: relative;
+    height: 60px; width: 60px;
+    top: -55px; left: 50px;
+    border-radius: 50%;
+    background: #D1E0FF;
+}
+.cloud-surface-sml{
+    position: relative;
+    height: 20px; width: 150px;
+    margin-top: 100px;
+    top: 10px; left: 20px;
+    border-radius: 75px;
+    background: #6F85AC;
+    
+    transform: scale(0.8, 0.8);
+}
+.cloud-surface-sml::before{
+    position: absolute;
+    content: "";
+    height: 50px; width: 50px;
+    top: -35px; left: 20px;
+    border-radius: 50%;
+    background: #6F85AC;
+}
+.cloud-surface-sml::after{
+    position: absolute;
+    content: "";
+    height: 40px; width: 40px;
+    top: -25px; right: 20px;
+    border-radius: 50%;
+    background: #6F85AC;
+}
+.inner-cloud-sml{
+    position: relative;
+    height: 60px; width: 60px;
+    top: -55px; left: 50px;
+    border-radius: 50%;
+    background: #6F85AC;
+}
+.rain-container{
+    position: relative;
+    height: 350px; width: 120px;
+    top: -25px;
+    font-family: Monospace;
+    font-size: 0.9em;
+    color: #D1E0FF;
+    background: transparent;
+    overflow: hidden;
+    
+    z-index: 0;
+}
+.raindrop{
+    position: absolute;
+}
+.lightning{
+    position: relative;
+    height: 15px; width: 10px;
+    top: -5px;
+    background: gold;
+    
+    transform: skewX(-20deg);
+    opacity: 0;
+}
+.lightning::after{
+    position: absolute;
+    content: "";
+    height: 0; width: 0;
+    top: 12px; left: 5px;
+    border-right: 5px solid transparent;
+    border-top: 20px solid gold;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    
+}
