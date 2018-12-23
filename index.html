@@ -1,97 +1,19 @@
-<!-- Created by Sleepy Koala-->
-
 <!DOCTYPE html>
 <html>
+    
     <head>
-       <!-- Charset -->
-       <meta charset="utf-8" />
-       <!-- CSS -->
-       <meta name="sleepykoala" author="sleepykoala" content="sleepykoala" />
-       <!-- Responsive -->
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <!-- jQuery -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <!-- Prefix Free -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-       <!-- Custom Font -->
-       <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
-          <link rel="stylesheet" href="https://raw.githubusercontent.com/misbahedm/misbahedm.github.io/master/main.css">
-        <script src="https://raw.githubusercontent.com/misbahedm/misbahedm.github.io/master/script.js"></script>
-       
-        
-<script> $(document).ready(function(){
-    function rain(){
-            /* Randomize horizontal placement of number */
-        var randomDigit = (Math.random() * 100) + 1, 
-            /* Binary number */
-            binary = [0, 1],
-            /* Binary Number Randomizer */ 
-            randomized = Math.round((Math.random())), 
-            rainContainer = $('.rain-container');
-        
-        /* Prepend binary numbers */
-        rainContainer.prepend('<span class="raindrop">'+binary[randomized]+'<span>');
-        /* Applying randomized placement of numbers */
-        $('.raindrop:first-child').css({left: randomDigit+'px'});
-        
-        //Variable for raindrop
-        var droplet = $('.raindrop');
-        /* Raindrop animation */
-        droplet.animate({top: '360px'}, 2000);
-        
-        /* I use remove() rather than fadeOut() because as the animation lasts longer, it becomes laggy with fadeOut() */
-        setTimeout(function(){
-            $('.raindrop:last-child').remove();
-        }, 2000);
-    }
-    
-    /* Adds binary numbers every 100 milliseconds */
-    setInterval(rain, 100);
-    
-    function lightning(){
-        var light = $('.lightning'), 
-            randomNumber = (Math.random() * 50) + 1;
-        
-        light.css({
-            left: randomNumber+'px', 
-            opacity: '1'
-        });
-        
-        setTimeout(function(){
-            light.css({
-                opacity: '0', 
-                transition: '500ms linear'
-            })
-        }, 2000);
-        
-        setTimeout(function(){
-            light.css({
-                transition: ''
-            })
-        }, 2500);
-    }
-    setInterval(lightning, 5000);
-    
-});
-            
-        </script>
-        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <main class="wrapper">
-            
-            <main class="cloud-surface-sml">
-                <section class="inner-cloud-sml"></section>
-            </main>
-            
-            <main class="cloud-surface">
-                <section class="inner-cloud"></section>
-            </main>
-            
-            <main class="lightning"></main>
-            
-            <main class="rain-container"></main>
-            
-        </main>
+        
+        <div id="bm"> </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"> </script>
+        <script src="index.js"> </script>
+        
+
     </body>
 </html>

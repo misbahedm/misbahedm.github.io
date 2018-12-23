@@ -1,116 +1,60 @@
-/* Created by Sleepy Koala */
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
 
 body {
-    margin: 0;
-    background: #354B72;
-    font-family: Arial;
-    user-select: none;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
 }
-.wrapper{
-    position: fixed;
-    height: 100%; width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
 }
-.cloud-surface{
-    position: relative; 
-    height: 20px; width: 150px;
-    border-radius: 75px;
-    background: #D1E0FF;
-    
-    z-index: 1;
+
+h2 {
+    margin-top: 1.3em;
 }
-.cloud-surface::before{
-    position: absolute;
-    content: "";
-    height: 50px; width: 50px;
-    top: -35px; left: 20px;
-    border-radius: 50%;
-    background: #D1E0FF;
+
+a {
+    color: #0083e8;
 }
-.cloud-surface::after{
-    position: absolute;
-    content: "";
-    height: 40px; width: 40px;
-    top: -25px; right: 20px;
-    border-radius: 50%;
-    background: #D1E0FF;
+
+b, strong {
+    font-weight: 600;
 }
-.inner-cloud{
-    position: relative;
-    height: 60px; width: 60px;
-    top: -55px; left: 50px;
-    border-radius: 50%;
-    background: #D1E0FF;
+
+samp {
+    display: none;
 }
-.cloud-surface-sml{
-    position: relative;
-    height: 20px; width: 150px;
-    margin-top: 100px;
-    top: 10px; left: 20px;
-    border-radius: 75px;
-    background: #6F85AC;
-    
-    transform: scale(0.8, 0.8);
-}
-.cloud-surface-sml::before{
-    position: absolute;
-    content: "";
-    height: 50px; width: 50px;
-    top: -35px; left: 20px;
-    border-radius: 50%;
-    background: #6F85AC;
-}
-.cloud-surface-sml::after{
-    position: absolute;
-    content: "";
-    height: 40px; width: 40px;
-    top: -25px; right: 20px;
-    border-radius: 50%;
-    background: #6F85AC;
-}
-.inner-cloud-sml{
-    position: relative;
-    height: 60px; width: 60px;
-    top: -55px; left: 50px;
-    border-radius: 50%;
-    background: #6F85AC;
-}
-.rain-container{
-    position: relative;
-    height: 350px; width: 120px;
-    top: -25px;
-    font-family: Monospace;
-    font-size: 0.9em;
-    color: #D1E0FF;
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    overflow: hidden;
-    
-    z-index: 0;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
 }
-.raindrop{
-    position: absolute;
-}
-.lightning{
-    position: relative;
-    height: 15px; width: 10px;
-    top: -5px;
-    background: gold;
-    
-    transform: skewX(-20deg);
-    opacity: 0;
-}
-.lightning::after{
-    position: absolute;
-    content: "";
-    height: 0; width: 0;
-    top: 12px; left: 5px;
-    border-right: 5px solid transparent;
-    border-top: 20px solid gold;
-    border-left: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
 }
