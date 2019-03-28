@@ -7,11 +7,11 @@
        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>6th Semester timetable</title>
     </head>
-    <body>
-        
+     <body onload="showTime()">
+        <div id="MyClockDisplay" class="clock"></div>
     <table width="947" height="527" border ="1">
             <caption>
-            6th Semester  Class Timetable 2019
+            <h1>6th Semester  Class Timetable 2019</h1>
             </caption>
             <tr class="days">
                 <th width="78" height="88" class="name">Day</th>
@@ -20,18 +20,18 @@
                 <th width="102" class="d3"><strong id="docs-internal-guid-3f6b5516-7fff-72e8-b751-5a37b6a4e98d">10:55-11:45</strong></th>
                 <th width="88" class="d4"><strong id="docs-internal-guid-bfcc527d-7fff-a416-e2c7-b3385051661c">11:45-12:35</strong></th>
                 <th width="92" class="d5"><strong id="docs-internal-guid-691a8a70-7fff-caf8-99fe-b88ad3db1844">12:35-1:25</strong></th>
-				<th width="97" class="d6"><strong id="docs-internal-guid-c9cfb84e-7fff-12ea-ea2a-b768f5e9d731">1:25-2:15</strong></th>
-				<th width="137" class="d7"><strong id="docs-internal-guid-c9cfb84e-7fff-12ea-ea2a-b768f5e9d731">1:25-2:15</strong></th>
+                <th width="97" class="d6"><strong id="docs-internal-guid-c9cfb84e-7fff-12ea-ea2a-b768f5e9d731">1:25-2:15</strong></th>
+                <th width="137" class="d7"><strong id="docs-internal-guid-c9cfb84e-7fff-12ea-ea2a-b768f5e9d731">1:25-2:15</strong></th>
             </tr>
             
              <tr id="730">
-                <td class="time"><strong id="docs-internal-guid-747f2190-7fff-b9d8-b649-f38b7efed3c5">Saturday</strong></td>
-                <td colspan="3" class="lecture d1"><strong id="docs-internal-guid-0f67a2df-7fff-ab97-5da9-a6b8602903ae">
+                <td class="time"><strong id="">Saturday</strong></td>
+                <td colspan="3" class="lecture d1"><strong id="">
                 <p dir="ltr">Software eng (66661) - FS &nbsp;&nbsp;&nbsp;RM -Soft Lab</p>
                 </strong></td>
-                <td colspan="2" class="d4"><strong id="docs-internal-guid-2d941508-7fff-7f95-8c2c-3a8887ea2161">AF -Environment 64054) RM-104</strong></td>
+                <td colspan="2" class="d4"><strong id="">AF -Environment 64054) RM-104</strong></td>
                 <td class="d6"></td>
-				<td class="d7"></td>
+                <td class="d7"></td>
             </tr>
             
             <tr id="930">
@@ -42,7 +42,7 @@
                   <p dir="ltr">RM-104</p>
                 </strong><br></td>
                 <td class="lecture d5"><strong id="docs-internal-guid-207a8248-7fff-6b6b-3728-b60993a8f620">RB-Micropressor(66662) Rm-104</strong></td>
-				<td class="d6"><strong id="docs-internal-guid-1679b290-7fff-a59d-d1d0-6d13f30f2103">SS-Webmastaring(6667) R-104</strong></td>
+                <td class="d6"><strong id="docs-internal-guid-1679b290-7fff-a59d-d1d0-6d13f30f2103">SS-Webmastaring(6667) R-104</strong></td>
                 <td class="lecture d7">&nbsp;</td>
             </tr>
             
@@ -56,7 +56,7 @@
                 <td class="lecture d3"><strong id="docs-internal-guid-9f50047c-7fff-0168-7f7b-eb31d804e165">RB-Micropressor(66662) Rm-104</strong></td>
                 <td class="d4"><strong id="docs-internal-guid-a39c0681-7fff-4d7d-55da-48dbd39df925">Software eng (66661) - FS &nbsp;&nbsp;&nbsp;RM-104</strong></td>
                 <td colspan="3" class="d5"><strong id="docs-internal-guid-4b238be3-7fff-7087-acbf-250c7eedf9d7">Web Mastaring-SS Room-software eng lab</strong></td>
-			</tr>
+            </tr>
             
             <tr id="130">
                 <td height="37" class="time"><strong id="docs-internal-guid-56065340-7fff-5b72-f597-5c7a44115c2d">Tuesday</strong></td>
@@ -66,7 +66,7 @@
                   <p dir="ltr">SS-DBMS(6664)</p>
                   <p dir="ltr">RM-software eng lab</p>
                 </strong><br></td>
-			</tr>
+            </tr>
             
             <tr id="143">
                 <td class="time"><strong id="docs-internal-guid-d1b78c46-7fff-83aa-419f-3a89a9b96cce">Wednesday</strong></td>
@@ -92,6 +92,36 @@
             
             
        </table>
-    <iframe src="http://free.timeanddate.com/clock/i6oz3ozo/n469/szw160/szh160/cf100/hnce1ead6/hwm1" frameborder="0" width="160" height="160"></iframe>
 </body>
+  <script>
+      function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+  </script>  
 </html>
