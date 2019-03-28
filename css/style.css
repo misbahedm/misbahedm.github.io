@@ -1,8 +1,8 @@
 /* Created by Koketso Dithipe */
 
 body {
-    background-color:Black;
-    color:white;
+    background-color:#ddd;
+    font-size: 20px;
 }
 
 .stressful{
@@ -10,11 +10,43 @@ body {
     
 }
 
+.clock {
+    position: fixed;
+    top:0;
+    background-color:#f1c40f;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 2px #f39c12;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+    color:black;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+   
+
+
+}
+caption h1{
+    padding:5px;
+    text-transform: uppercase;
+}
+table{
+    margin: 0px auto;
+    margin-top: 50px;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .days {
     border:dotted 3px;
     border-color:blue;
     background-color:#ffebcd;
-    color:Black;
+    color:black;
     font-family: 'Cookie', cursive;
 }
 
@@ -30,8 +62,9 @@ body {
 caption {
     display: table-caption;
     text-align: center;
-    font-size:27px;
-    color:blue;
+    font-size:20px;
+    color:black;
+    padding: 2px 0px;
 }
 
 th {
