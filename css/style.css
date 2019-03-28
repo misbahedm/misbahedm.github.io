@@ -1,0 +1,58 @@
+/* Created by Koketso Dithipe */
+
+body {
+    background-color:Black;
+    color:white;
+}
+
+.stressful{
+    background-color:darkRed;
+    
+}
+
+.days {
+    border:dotted 3px;
+    border-color:blue;
+    background-color:#ffebcd;
+    color:Black;
+    font-family: 'Cookie', cursive;
+}
+
+
+.lecture {
+    background-color:yellow;
+    color:purple;
+    border:dotted 3px;
+    border-color:blue;
+    font-family: 'Cookie', cursive;
+}
+
+caption {
+    display: table-caption;
+    text-align: center;
+    font-size:27px;
+    color:blue;
+}
+
+th {
+    border:dotted 3px;
+    border-color:#ff1493; /*deeppink*/
+}
+
+.name, .time {
+    font-family: 'Pacifico', cursive;
+}
+
+#highlight {
+    background-color:#0d0;
+    border: dotted 3px dotted;
+    border-color:red;
+}
+
+.si {
+    background-color:deeppink;   
+    border:dotted 3px;
+    border-color:lightgreen;
+    font-family: 'Cookie', cursive;
+}
+}
