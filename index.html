@@ -1,23 +1,35 @@
-<!-- Created by Koketso Dithipe-->
 
 <!DOCTYPE html>
 <html>
     <head>
        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
        <link rel="stylesheet" type="text/css" href="css/style.css">
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
         <title>6th Semester timetable</title>
     </head>
      <body onload="showTime()">
-        
-         <div id="MyClockDisplay" class="clock"></div>
          
-     <div style="overflow-x:auto;">    
-    <table width="947" height="527" border ="1">
+      <div >
+         <div id="MyClockDisplay" class="clock"></div>
+         </div>  
+         
+       <div >
+         <h1 class="display-4 text-center">6th Semester  Class Timetable 2019</h1>
+    </div>   
+        
+         
+         
+        
+    <table class="table table-bordered" >
+        
             
-        <caption>
-            <h1>6th Semester  Class Timetable 2019</h1>
-            </caption>
-            
+          
+          
         <tr class="days">
                 <th width="78" height="88" class="name">Day</th>
                 <th width="75" class="d1"><strong id="docs-internal-guid-2a524f50-7fff-e125-d888-e8d11ec88828">9-10:5</strong></th>
@@ -97,6 +109,11 @@
             
             
        </table>
+         
+         
+         
+         
+         
 </body>
   <script>
       function showTime(){
