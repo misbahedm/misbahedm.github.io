@@ -1,7 +1,6 @@
-/* Created by Koketso Dithipe */
 
 body {
-    background-color:#ddd;
+    background-color:white;
     font-size: 20px;
 }
 
@@ -29,13 +28,44 @@ body {
 
 }
 caption h1{
+    border: solid 10px ;
+    border-radius: 25px;
+    border: 0px solid #00b041;
     padding:5px;
     text-transform: uppercase;
+    background-image: linear-gradient(#22c1c3, lightgreen);
+    
+    -webkit-box-shadow: 17px -2px 46px 23px rgba(0,0,0,0.21);
+    -moz-box-shadow: 17px -2px 46px 23px rgba(0,0,0,0.21);
+    box-shadow: 17px -2px 46px 23px rgba(0,0,0,0.14);
 }
+
+
 table{
+    border-collapse: collapse;
+    border-color: black;
+    border: solid ;
     margin: 0px auto;
     margin-top: 50px;
 }
+
+th, td {
+  padding: 8px;
+  border: 1px solid green;
+  text-align: left;
+  border-bottom: 1px solid green;
+  border-color: green 3px ;
+}
+
+th {
+    border:solid 3px;
+    border-color:green; 
+}
+
+
+
+tr:hover {background-color:#cbd1cd;}
+
 img{
     margin-left: auto;
     margin-right: auto;
@@ -43,20 +73,20 @@ img{
 }
 
 .days {
-    border:dotted 3px;
-    border-color:blue;
-    background-color:#ffebcd;
+    border:solid 3px;
+    border-color:gray;
+    background-color: whitesmoke;
     color:black;
-    font-family: 'Cookie', cursive;
+    font-family: 'Roboto',;
 }
 
 
 .lecture {
-    background-color:yellow;
-    color:purple;
-    border:dotted 3px;
-    border-color:blue;
-    font-family: 'Cookie', cursive;
+    background-color:#d4fbce;
+    color:black;
+    border:solid 1px;
+    border-color:dimgray;
+    font-family: 'Roboto',;
 }
 
 caption {
@@ -67,13 +97,9 @@ caption {
     padding: 2px 0px;
 }
 
-th {
-    border:dotted 3px;
-    border-color:#ff1493; /*deeppink*/
-}
 
 .name, .time {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', ;
 }
 
 #highlight {
@@ -83,9 +109,9 @@ th {
 }
 
 .si {
-    background-color:deeppink;   
-    border:dotted 3px;
-    border-color:lightgreen;
-    font-family: 'Cookie', cursive;
+    background-color:#e6e6fa;   
+    border:solid 3px;
+    border-color:limegreen;
+    font-family: 'Roboto',;
 }
 }
