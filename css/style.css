@@ -92,6 +92,16 @@ img{
     font-family: 'Roboto',;
 }
 
+.lab {
+    background-color:#d4fbce;
+    color:black;
+    border:solid 1px;
+    border-color:dimgray;
+    font-family: 'Roboto',;
+}
+
+
+
 caption {
     display: table-caption;
     text-align: center;
