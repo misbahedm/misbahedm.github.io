@@ -8,17 +8,17 @@ onload = function() {
     var time;
     if (current >= 9 * 60 + 01 && current < 10 * 60 + 05)
         time = "001";
-    else if (current >= 10 * 60 + 06 && current < 10 * 60 + 55)
+    else if (current >= 10 * 60 + 05 && current < 10 * 60 + 55)
         time = "002";
-    else if (current >= 10 * 60 + 56 && current < 11 * 60 + 45)
+    else if (current >= 10 * 60 + 55 && current < 11 * 60 + 45)
         time = "003";
-    else if (current >= 11 * 60 + 46 && current < 12 * 60 + 35)
+    else if (current >= 11 * 60 + 45 && current < 12 * 60 + 35)
         time = "004";
-    else if (current >= 12 * 60 + 36 && current < 13 * 60 + 25)
+    else if (current >= 12 * 60 + 35 && current < 13 * 60 + 25)
         time = "005";
-    else if (current >= 13 * 60 + 26 && current < 14 * 60 + 15)
+    else if (current >= 13 * 60 + 25 && current < 14 * 60 + 15)
         time = "006";
-    else if (current >= 14 * 60 + 16 && current < 15 * 60 + 05)
+    else if (current >= 14 * 60 + 15 && current < 15 * 60 + 05)
         time = "007";
     
     
