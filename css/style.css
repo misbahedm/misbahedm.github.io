@@ -32,7 +32,7 @@ body {
     h1{
     border: solid 10px ;
     border-radius: 25px;
-    border: 0px solid #00b041;
+    border: 0 ;
     padding:5px;
     text-align: center;
     text-transform: uppercase;
@@ -67,7 +67,7 @@ th {
 
 
 
-tr:hover {background-color:#cbd1cd;}
+td:hover {background-color:#cbd1cd;}
 
 img{
     margin-left: auto;
@@ -116,7 +116,7 @@ caption {
 }
 
 #highlight {
-    background-color:#0d0;
+    background-color:#e8a2a2;
     border: dotted 3px dotted;
     border-color:red;
 }

@@ -1,155 +1,129 @@
+<!-- Created by Koketso Dithipe-->
 
 <!DOCTYPE html>
 <html>
     <head>
-       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Cookie|Pacifico" rel="stylesheet"> 
        <link rel="stylesheet" type="text/css" href="css/style.css">
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        
+
+        <script src="js/main.js"></script>
         <title>6th Semester timetable</title>
     </head>
-     <body onload="showTime()">
+    
+    <body >
          
-      <div >
+   <!--<div onload="showTime()">
          <div id="MyClockDisplay" class="clock"></div>
-         </div>  
+    </div>
+    --->
          
-       <div >
+    <div >
          <h1 class="display-4 text-center">6th Semester  Class Timetable 2019</h1>
     </div>   
         
-         
-         
         
-    <table class="table table-bordered" >
         
-        <thead>
-          
-          
-        <tr class="days">
-                <th scope="col" class="name">Day</th>
-                <th scope="col"><strong id="docs-internal-guid-2a524f50-7fff-e125-d888-e8d11ec88828">9-10:5</strong></th>
-                <th scope="col" class="d2"><strong id="docs-internal-guid-d1b8db46-7fff-4845-0c2e-6f07cd182041">10:05-10.55</strong></th>
-                <th scope="col" class="d3"><strong id="docs-internal-guid-3f6b5516-7fff-72e8-b751-5a37b6a4e98d">10:55-11:45</strong></th>
-                <th scope="col" class="d4"><strong id="docs-internal-guid-bfcc527d-7fff-a416-e2c7-b3385051661c">11:45-12:35</strong></th>
-                <th scope="col" class="d5"><strong id="docs-internal-guid-691a8a70-7fff-caf8-99fe-b88ad3db1844">12:35-1:25</strong></th>
-                <th scope="col" class="d6"><strong id="docs-internal-guid-c9cfb84e-7fff-12ea-ea2a-b768f5e9d731">1:25-2:15</strong></th>
-                <th scope="col" class="d7"><strong id="docs-internal-guid-c9cfb84e-7fff-12ea-ea2a-b768f5e9d731">2:15-3:05</strong></th>
+        
+        <table border ="0">
+            
+            <tr class="days">
+                <th class="name">class name</th>
+                <th class="d1">Saturday</th>
+                <th class="d2">Sunday</th>
+                <th class="d3">Monday</th>
+                <th class="d4">Tuesday</th>
+                <th class="d5">Wednesday</th>
+                <th class="d6">Thursday</th>
             </tr>
             
-            </thead>
-        <tbody>
-            
-            <!--lecture d1 green colour ,si lab color-->
-            <!--lecture d1 green colour ,si lab color-->
-            
-             <tr id="730">
-                <td scope="row" class="time"><strong id="">Saturday</strong></td>
-                <td colspan="3" class=" d1"><strong id="">
-                <p dir="ltr">Software eng (66661) - FS RM - Soft Lab</p>
-                </strong></td>
-                <td colspan="2" class=" d2"><strong id="">AF -Environment 64054) RM-104</strong></td>
+             <tr id="001">
+                <td class="time">9-10:5</td>
+                <td class="d1">Software eng (66661) - FS RM - Soft Lab</td>
+                <td class="d2">Microcontroller App(66663) RB Room-interfacing Lab</td>
+                <td class="d3"></td>
+                <td class="d4">Microcontroller App(66663) RB Room-interfacing Lab</td>
+                <td class="d5"></td>
                 <td class="d6"></td>
-                <td class="d7"></td>
             </tr>
             
-            
-            <tr id="930">
-                <td scope="row" class="time"><strong id="docs-internal-guid-3eb24b53-7fff-e012-6a9f-dcc011196905">Sunday</strong></td>
-                <td colspan="3" class="lecture d1 "><strong id="docs-internal-guid-3285aded-7fff-027b-f129-10590c863785">Microcontroller App(66663) RB Room-interfacing Lab</strong></td>
-                <td class="d4"><strong id="docs-internal-guid-e939708e-7fff-3a27-432c-f8417b13f989">
-                  SS-DBMS(66664) RM-104
-                </strong><br></td>
-                <td class=" d5"><strong id="docs-internal-guid-207a8248-7fff-6b6b-3728-b60993a8f620">RB-Micropressor(66662)Rm-104</strong></td>
-                <td class="d6"><strong id="docs-internal-guid-1679b290-7fff-a59d-d1d0-6d13f30f2103">SS-Webmastaring(6667) R-104</strong></td>
-                <td class="d7">&nbsp;</td>
+            <tr id="002">
+                <td class="time">10:05 - 10.55</td>
+                <td class="d1">Software eng (66661) - FS RM - Soft Lab</td>
+                <td class="d2"></td>
+                <td class="d3">SS-DBMS(66664) RM-104</td>
+                <td class="d4">Microcontroller App(66663) RB Room-interfacing Lab</td>
+                <td class="d5">Industrial management-SN-R-102</td>
+                <td class="d6"></td>
             </tr>
             
-            <tr id="110">
-                <td scope="row" class="time"><strong id="docs-internal-guid-3c978f67-7fff-0ffb-070c-d60d7e4dccdf">Monday</strong></td>
+            <tr id="003">
+                <td class="time">10:55-11:45</td>
+                <td class="d1">Software eng (66661) - FS RM - Soft Lab</td>
+                <td class="d2"></td>
+                <td class="d3">RB-Micropressor(66662) Rm-104</td>
+                <td class="d4">Microcontroller App(66663) RB Room-interfacing Lab</td>
+                <td class="d5">Web Mastaring-SS-R-102</td>
+                <td class="d6">Software eng (66661) - FS RM -101</td>
+            </tr>
+            
+            <tr id="004">
+                <td class="time">11:45-12:35</td>
+                <td class="d1">AF -Environment 64054) RM-104</td>
+                <td class="d2">SS-DBMS(66664) RM-104</td>
+                <td class="d3">Software eng (66661) - FS RM-104</td>
+                <td class="d4">SN(65852) R-103</td>
+                <td class="d5">Software eng (66661) - FS Room - Networking Lab</td>
+                <td class="d6">RB-Micropressor(66662) Room-interfacing Lab</td>
+            </tr>
+            
+            <tr id="005">
+                <td class="time">12:35 - 01:25</td>
                 <td class="d1"></td>
-                <td class="d2"><strong id="docs-internal-guid-132290d9-7fff-dcce-0ed1-744589c2c833">
-                  SS-DBMS(66664) RM-104
-                </strong><br></td>
-                <td class="d3"><strong id="docs-internal-guid-9f50047c-7fff-0168-7f7b-eb31d804e165">RB-Micropressor(66662) Rm-104</strong></td>
-                <td class="d4"><strong id="docs-internal-guid-a39c0681-7fff-4d7d-55da-48dbd39df925">Software eng (66661) - FS RM-104</strong></td>
-                <td colspan="3" class="lecture d5"><strong id="docs-internal-guid-4b238be3-7fff-7087-acbf-250c7eedf9d7">Web Mastaring-SS Room-software eng lab</strong></td>
+                <td class="d2">RB-Micropressor(66662) Rm-104</td>
+                <td class="d3">Web Mastaring-SS Room-software eng lab</td>
+                <td class="d4">SS-DBMS(66664) RM-software eng lab</td>
+                <td class="d5">Software eng (66661) - FS Room - Networking Lab</td>
+                <td class="d6">RB-Micropressor(66662) Room-interfacing Lab</td>
             </tr>
             
-            <tr id="130">
-                <td scope="row" class="time"><strong id="docs-internal-guid-56065340-7fff-5b72-f597-5c7a44115c2d">Tuesday</strong></td>
-                <td colspan="3" class="lecture d1"><strong id="docs-internal-guid-9da2bb75-7fff-c05a-4063-0c500ef3a995">Microcontroller App(66663) RB Room-interfacing Lab</strong></td>
-                <td class="d4"><strong id="docs-internal-guid-92aa3217-7fff-2691-4901-439e15f19da2">SN(65852) R-103</strong></td>
-                <td colspan="3" class="lecture d5"><strong id="docs-internal-guid-2fc1fe74-7fff-44ef-7d6e-c99417cb37f1">
-                  SS-DBMS(66664) RM-software eng lab
-                </strong><br></td>
+            <tr id="006">
+                <td class="time">1:25-2:15</td>
+                <td class="d1"></td>
+                <td class="d2">SS-Webmastaring(6667) R-104</td>
+                <td class="d3">Web Mastaring-SS Room-software eng lab</td>
+                <td class="d4">SS-DBMS(66664) RM-software eng lab</td>
+                <td class="d5">Software eng (66661) - FS Room - Networking Lab</td>
+                <td class="d6">RB-Micropressor(66662) Room-interfacing Lab</td>
             </tr>
             
-            <tr id="143">
-                <td scope="row" class="time"><strong id="docs-internal-guid-d1b78c46-7fff-83aa-419f-3a89a9b96cce">Wednesday</strong></td>
-                <td class="d1">&nbsp;</td>
-                <td class="d2"><strong id="docs-internal-guid-cb5fdce1-7fff-9d36-e06d-e3bc326170f1">
-                 Industrial management-SN-R-102
-                </strong><br></td>
-                <td class="d3"><strong id="docs-internal-guid-fee65c87-7fff-be62-229b-8a2ec3fc60c7">Web Mastaring-SS-R-102</strong></td>
-                <td colspan="3" class=" d4"><strong id="docs-internal-guid-679f940c-7fff-fbb6-c1a1-03d687efba4c">
-                  Software eng (66661) - FS Room - Networking Lab
-                </strong><br></td>
-                <td class="d7"></td>
-            </tr>
             
-            <tr id="160">
-                
-                <td scope="row" class="time"><strong id="docs-internal-guid-9330e0bb-7fff-a83d-3bc7-5b7a30137ec5">Thursday</strong></td>
+            <tr id="007">
+                <td class="time">2:15-3:05</td>
                 <td class="d1"></td>
                 <td class="d2"></td>
-                <td class="d3"><strong id="docs-internal-guid-e073495f-7fff-3685-e150-fd1ea082554f">Software eng (66661) - FS RM -101</strong></td>
-                <td colspan="3" class="d4"><strong id="docs-internal-guid-ac125769-7fff-87d0-d3bd-494196e9d83d">RB-Micropressor(66662) Room-interfacing Lab</strong></td>
-                <td class="d7">&nbsp;</td>
+                <td class="d3">Web Mastaring-SS Room-software eng lab</td>
+                <td class="d4">SS-DBMS(66664) RM-software eng lab</td>
+                <td class="d5"></td>
+                <td class="d6"></td>
             </tr>
             
-        </tbody>
+            
+             <tr id="008">
+                <td class="time">1:25-2:15</td>
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+            </tr>
+            
             
        </table>
-         
-         
-         
-         
-         
-</body>
-  <script>
-      function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    
-    if(h == 0){
-        h = 12;
-    }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
-    }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-    
-    setTimeout(showTime, 1000);
-    
-}
-
-showTime();
-  </script>  
+        
+    </body>
 </html>
