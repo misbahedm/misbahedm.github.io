@@ -32,7 +32,7 @@ onload = function() {
     if (!time)
         return;
     var today = date.getDay(); // 3
-    console.log(today); 
+    
     var children = document.getElementById(time).childNodes;
     for (var i = 0; i < children.length; i++)  {
         var classes = children[i].classList;
@@ -46,9 +46,73 @@ onload = function() {
             }
         }
     }
+
+
+
+
+
+
+
+    showDate();
+    showTime();
+
+
+
+
+
+
+
+
+
+
 }
 
 
 //clock script
 
 
+function showTime(){
+    var date_clock = new Date();
+    var h = date_clock.getHours(); // 0 - 23
+    var m = date_clock.getMinutes(); // 0 - 59
+    var s = date_clock.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+      h = 12;
+    }
+    
+    if(h > 12){
+      h = h - 12;
+      session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time_clock = h + ":" + m + ":" + s + " " + session;
+    
+    document.getElementById("MyClockDisplay").innerText = time_clock;
+    
+    setTimeout(showTime, 1000);
+    
+    }
+    
+    
+    function showDate(){
+
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var date_div = new Date();
+
+        date_div = date_div.toLocaleDateString("bn-BD", options); 
+
+
+        document.getElementById("MyDateDisplay").innerText = date_div;
+
+
+
+
+
+    }
+    
