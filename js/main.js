@@ -23,7 +23,7 @@ onload = function() {
     
     
     
-    else if (current >= 18 * 60 + 06 && current < 20 * 60 + 05)
+    else if (current >= 24 * 60 + 20 && current < 24 * 60 + 50)
         time = "008";
         
         
