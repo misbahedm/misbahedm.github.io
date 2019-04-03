@@ -2,126 +2,162 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-       <link href="https://fonts.googleapis.com/css?family=Cookie|Pacifico" rel="stylesheet"> 
-       <link rel="stylesheet" type="text/css" href="css/style.css">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
-        <title>6th Semester timetable</title>
-    </head>
-    
-    <body >
-         
-  <div class="clock">
-        <div id="MyDateDisplay" class="date_div" ></div>
-        <div id="MyClockDisplay" ></div>
+    <title>6th Semester timetable</title>
+</head>
+
+<body>
+
+    <div class="clock">
+        <div id="MyDateDisplay" class="date_div"></div>
+        <div id="MyClockDisplay"></div>
     </div>
-    
-         
-    <div >
-         <h1 class="display-4 text-center">6th Semester  Class Timetable 2019</h1>
-    </div>   
-        
-   <!-- <iframe src="https://freesecure.timeanddate.com/clock/i6p8zoge/n469/szw160/szh160/hoc222/hbw6/cf100/hgr0/fan2/fas20/fdi70/mqc000/mqs3/mql13/mqw4/mqd94/mhc000/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhc111/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hsc090/hss1/hsl90/hsr5" frameborder="0" width="160" height="160"></iframe> -->
+
+
+
+    <div>
+        <h1 class="display-4 text-center">৬ষ্ঠ সেমিস্টার ক্লাস রুটিন</h1>
+    </div>
+
+
+    <div class="runningClassStyle" id="running_class"></div>
+
+
+
+
+    <!-- <iframe src="https://freesecure.timeanddate.com/clock/i6p8zoge/n469/szw160/szh160/hoc222/hbw6/cf100/hgr0/fan2/fas20/fdi70/mqc000/mqs3/mql13/mqw4/mqd94/mhc000/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhc111/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hsc090/hss1/hsl90/hsr5" frameborder="0" width="160" height="160"></iframe> -->
     <!-- <iframe src="https://freesecure.timeanddate.com/clock/i6p9cpiw/n469/tlbd43/fs20/tt0/th2/tb4" frameborder="0" width="277" height="52"></iframe> -->
 
 
-        <!-- day start with sunday=0 reference
+    <!-- day start with sunday=0 reference
           https://javascript.info/date
           https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay -->
-        
-        
-        <table border ="0">
-            
-            <tr class="days">
-                <th class="name"><h5>ক্লাস</h5></th>
-                <th class="d6"><h5>শনিবার</h5></th>
-                <th class="d0"><h5>রবিবার</h5></th>
-                <th class="d1"><h5>সোমবার</h5></th>
-                <th class="d2"><h5>মঙ্গলবার</h5></th>
-                <th class="d3"><h5>বুধবার</h5></th>
-                <th class="d4"><h5>বৃহস্পতিবার</h5></th>
-            </tr>
-            
-             <tr id="001">
-                <td class="time"><h5>৯ - ১০.৫</h5></td>
-                <td class="d6">Software eng (66661) - FS RM - Soft Lab</td>
-                <td class="d0">Microcontroller App(66663) RB Room-interfacing Lab</td>
-                <td class="d1"></td>
-                <td class="d2">Microcontroller App(66663) RB Room-interfacing Lab</td>
-                <td class="d3"></td>
-                <td class="d4"></td>
-            </tr>
-            
-            <tr id="002">
-                <td class="time"><h5>১০.৫-১০.৫৫</h5></td>
-                <td class="d6">same class</td>
-                <td class="d0">same class</td>
-                <td class="d1">SS-DBMS(66664) RM-104</td>
-                <td class="d2">same class</td>
-                <td class="d3">Industrial management-SN-R-102</td>
-                <td class="d4"></td>
-            </tr>
-            
-            <tr id="003">
-                <td class="time"> <h5>১০.৫৫-১১.৪৫</h5></td>
-                <td class="d6">same class</td>
-                <td class="d0">same class</td>
-                <td class="d1">RB-Micropressor(66662) Rm-104</td>
-                <td class="d2">same class</td>
-                <td class="d3">Web Mastaring-SS-R-102</td>
-                <td class="d4">Software eng (66661) - FS RM -101</td>
-            </tr>
-            
-            <tr id="004">
-                <td class="time"><h5>১১.৪৫-১২.৩৫</h5></td>
-                <td class="d6">AF -Environment 64054) RM-104</td>
-                <td class="d0">SS-DBMS(66664) RM-104</td>
-                <td class="d1">Software eng (66661) - FS RM-104</td>
-                <td class="d2">SN(65852) R-103</td>
-                <td class="d3">Software eng (66661) - FS Room - Networking Lab</td>
-                <td class="d4">RB-Micropressor(66662) Room-interfacing Lab</td>
-            </tr>
-            
-            <tr id="005">
-                <td class="time"><h5>১২.৩৫- ১.২৫</h5></td>
-                <td class="d6">same class</td>
-                <td class="d0">RB-Micropressor(66662) Rm-104</td>
-                <td class="d1">Web Mastaring-SS Room-software eng lab</td>
-                <td class="d2">SS-DBMS(66664) RM-software eng lab</td>
-                <td class="d3">same class</td>
-                <td class="d4">same class</td>
-            </tr>
-            
-            <tr id="006">
-                <td class="time"><h5>১.২৫-২.১৫</h5></td>
-                <td class="d6"></td>
-                <td class="d0">SS-Webmastaring(6667) R-104</td>
-                <td class="d1">same class</td>
-                <td class="d2">same class</td>
-                <td class="d3">same class</td>
-                <td class="d4">same class</td>
-            </tr>
-            
-            
-            <tr id="007">
-                <td class="time"><h5>২.১৫-৩.০৫</h5></td>
-                <td class="d6"></td>
-                <td class="d0"></td>
-                <td class="d1">same class</td>
-                <td class="d2">same class</td>
-                <td class="d3"></td>
-                <td class="d4"></td>
-            </tr>
-            
-            
-         <!--    <tr id="008">
+
+
+    <table border="0">
+
+        <tr class="days">
+            <th class="name">
+                <h5>ক্লাস</h5>
+            </th>
+            <th class="d6">
+                <h5>শনিবার</h5>
+            </th>
+            <th class="d0">
+                <h5>রবিবার</h5>
+            </th>
+            <th class="d1">
+                <h5>সোমবার</h5>
+            </th>
+            <th class="d2">
+                <h5>মঙ্গলবার</h5>
+            </th>
+            <th class="d3">
+                <h5>বুধবার</h5>
+            </th>
+            <th class="d4">
+                <h5>বৃহস্পতিবার</h5>
+            </th>
+        </tr>
+
+        <tr id="001">
+            <td class="t1">
+                <h5>৯ - ১০.৫</h5>
+            </td>
+            <td class="d6">Software eng (66661) - FS RM - Soft Lab</td>
+            <td class="d0">Microcontroller App(66663) RB Room-interfacing Lab</td>
+            <td class="d1"></td>
+            <td class="d2">Microcontroller App(66663) RB Room-interfacing Lab</td>
+            <td class="d3"></td>
+            <td class="d4"></td>
+        </tr>
+
+        <tr id="002">
+            <td class="t2">
+                <h5>১০.৫-১০.৫৫</h5>
+            </td>
+            <td class="d6">পূর্ববর্তী</td>
+            <td class="d0">পূর্ববর্তী</td>
+            <td class="d1">SS-DBMS(66664) RM-104</td>
+            <td class="d2">পূর্ববর্তী</td>
+            <td class="d3">Industrial management-SN-R-102</td>
+            <td class="d4"></td>
+        </tr>
+
+        <tr id="003">
+            <td class="t3">
+                <h5>১০.৫৫-১১.৪৫</h5>
+            </td>
+            <td class="d6">পূর্ববর্তী</td>
+            <td class="d0">পূর্ববর্তী</td>
+            <td class="d1">RB-Micropressor(66662) Rm-104</td>
+            <td class="d2">পূর্ববর্তী</td>
+            <td class="d3">Web Mastaring-SS-R-102</td>
+            <td class="d4">Software eng (66661) - FS RM -101</td>
+        </tr>
+
+        <tr id="004">
+            <td class="t4">
+                <h5>১১.৪৫-১২.৩৫</h5>
+            </td>
+            <td class="d6">AF -Environment 64054) RM-104</td>
+            <td class="d0">SS-DBMS(66664) RM-104</td>
+            <td class="d1">Software eng (66661) - FS RM-104</td>
+            <td class="d2">SN(65852) R-103</td>
+            <td class="d3">Software eng (66661) - FS Room - Networking Lab</td>
+            <td class="d4">RB-Micropressor(66662) Room-interfacing Lab</td>
+        </tr>
+
+        <tr id="005">
+            <td class="t5">
+                <h5>১২.৩৫- ১.২৫</h5>
+            </td>
+            <td class="d6">পূর্ববর্তী</td>
+            <td class="d0">RB-Micropressor(66662) Rm-104</td>
+            <td class="d1">Web Mastaring-SS Room-software eng lab</td>
+            <td class="d2">SS-DBMS(66664) RM-software eng lab</td>
+            <td class="d3">পূর্ববর্তী</td>
+            <td class="d4">পূর্ববর্তী</td>
+        </tr>
+
+        <tr id="006">
+            <td class="t6">
+                <h5>১.২৫-২.১৫</h5>
+            </td>
+            <td class="d6"></td>
+            <td class="d0">SS-Webmastaring(6667) R-104</td>
+            <td class="d1">পূর্ববর্তী</td>
+            <td class="d2">পূর্ববর্তী</td>
+            <td class="d3">পূর্ববর্তী</td>
+            <td class="d4">পূর্ববর্তী</td>
+        </tr>
+
+
+        <tr id="007">
+            <td class="t7">
+                <h5>২.১৫-৩.০৫</h5>
+            </td>
+            <td class="d6"></td>
+            <td class="d0"></td>
+            <td class="d1">পূর্ববর্তী</td>
+            <td class="d2">পূর্ববর্তী</td>
+            <td class="d3"></td>
+            <td class="d4"></td>
+        </tr>
+
+
+        <!--    <tr id="008">
                 <td class="time">test</td>
                 <td class="d1"></td>
                 <td class="d2"></td>
@@ -130,12 +166,13 @@
                 <td class="d5"></td>
                 <td class="d6"></td>
             </tr>
-        -->    
-            
-       </table>
-        
-      
+        -->
+
+    </table>
 
 
-    </body>
+
+
+</body>
+
 </html>
