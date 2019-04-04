@@ -6,6 +6,17 @@
 
 onload = function () {
 
+    showDate();
+    showTime();
+    generateRoutine();
+
+}
+
+
+
+//routine table time function
+function generateRoutine() {
+
     var date = new Date();
     var current = date.getHours() * 60 + date.getMinutes();
     var time;
@@ -24,49 +35,50 @@ onload = function () {
         time = "006";
     else if (current >= 14 * 60 + 15 && current < 15 * 60 + 05)
         time = "007";
+    else
+        time = "000";
 
 
 
-    // else if (current >= 24 * 60 + 20 && current < 24 * 60 + 50)
-    //    time = "008";
+    if (time == "000") {
+
+        //document.getElementById("running_class").style.display = "none";
+
+    } else {
+
+
+        var today = date.getDay(); // 3
+
+
+
+        var children = document.getElementById(time).childNodes;
+
+        for (var i = 0; i < children.length; i++) {
+
+            var classes = children[i].classList;
+
+            if (!classes) {
+
+                continue;
+
+            }
 
 
 
 
-    if (!time) {
-        return;
-    }
+            for (var j = 0; j < classes.length; j++) {
 
-    var today = date.getDay(); // 3
+                if (classes[j] == "d" + today) {
 
+                    var highlight_id = document.getElementById("highlight");
 
+                    if (highlight_id) {
+                        highlight_id.setAttribute("id", "");
+                    }
 
-    var children = document.getElementById(time).childNodes;
+                    children[i].setAttribute("id", "highlight");
 
-    for (var i = 0; i < children.length; i++) {
-
-        var classes = children[i].classList;
-
-        if (!classes) {
-
-            continue;
-
-        }
-
-
-
-
-        for (var j = 0; j < classes.length; j++) {
-
-            if (classes[j] == "d" + today) {
-
-                var highlight_id = document.getElementById("highlight");
-
-                if (highlight_id) {
-                    highlight_id.setAttribute("id", "");
                 }
-
-                children[i].setAttribute("id", "highlight");
 
             }
 
@@ -74,30 +86,13 @@ onload = function () {
 
     }
 
-
-
-
-
-
-
-    showDate();
-    showTime();
     running_class();
-
-
-
-
-
-
-
-
 
 }
 
 
+
 //clock script
-
-
 function showTime() {
     var date_clock = new Date();
     var h = date_clock.getHours(); // 0 - 23
@@ -145,6 +140,8 @@ function showDate() {
 
 }
 
+
+
 //runnging class function
 function running_class() {
 
@@ -158,6 +155,8 @@ function running_class() {
     } else {
         running_class_div.innerText = "এখন ক্লাস বন্ধ";
     }
+
+    running_class_div.style.display = "block";
 
 
 }
