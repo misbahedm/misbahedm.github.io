@@ -21,7 +21,7 @@ function generateRoutine() {
     var current = date.getHours() * 60 + date.getMinutes();
     var time;
 
-    if (current >= 9 * 60 + 01 && current < 10 * 60 + 05)
+    if (current >= 9 * 60 + 15 && current < 10 * 60 + 05)
         time = "001";
     else if (current >= 10 * 60 + 05 && current < 10 * 60 + 55)
         time = "002";
@@ -31,9 +31,9 @@ function generateRoutine() {
         time = "004";
     else if (current >= 12 * 60 + 35 && current < 13 * 60 + 25)
         time = "005";
-    else if (current >= 13 * 60 + 25 && current < 14 * 60 + 15)
+    else if (current >= 13 * 60 + 25 && current < 14 * 60 + 30)
         time = "006";
-    else if (current >= 14 * 60 + 15 && current < 15 * 60 + 05)
+    else if (current >= 14 * 60 + 30 && current < 15 * 60 + 20)
         time = "007";
     else
         time = "000";
