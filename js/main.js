@@ -110,10 +110,14 @@ function generateRoutine() {
 
 
 
-        if (!next_time == "000") {
+        if (next_time == "000") {
             // it is last period
             document.getElementById("nextclass_card").style.display = "none";
         } else {
+
+
+
+
             // next class available
 
             // next_children
@@ -235,17 +239,17 @@ function running_class() {
 function next_class() {
 
 
-    var highlighted_text = document.getElementById("next_highlight").innerText;
+    var next_highlighted_text = document.getElementById("next_highlight").innerText;
 
-    var running_class_div = document.getElementById("next_class");
+    var next_class_div = document.getElementById("next_class");
 
-    if (highlighted_text != "") {
-        running_class_div.innerText = highlighted_text;
+    if (next_highlighted_text != "") {
+        next_class_div.innerText = next_highlighted_text;
     } else {
-        running_class_div.innerText = "এখন ক্লাস বন্ধ";
+        next_class_div.innerText = "এখন ক্লাস বন্ধ";
     }
 
-    running_class_div.style.display = "block";
+    next_class_div.style.display = "block";
 
 
 }
