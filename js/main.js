@@ -14,54 +14,34 @@ onload = function () {
 
 
 
-
-
-
-
 //routine table time function
 function generateRoutine() {
 
     var date = new Date();
     var current = date.getHours() * 60 + date.getMinutes();
-    var time, next_time;
+    var time;
 
-    if (current >= 9 * 60 + 15 && current < 10 * 60 + 05) {
+    if (current >= 9 * 60 + 15 && current < 10 * 60 + 05)
         time = "001";
-        next_time = "002";
-    }
-    else if (current >= 10 * 60 + 05 && current < 10 * 60 + 55) {
+    else if (current >= 10 * 60 + 05 && current < 10 * 60 + 55)
         time = "002";
-        next_time = "003";
-    }
-    else if (current >= 10 * 60 + 55 && current < 11 * 60 + 45) {
+    else if (current >= 10 * 60 + 55 && current < 11 * 60 + 45)
         time = "003";
-        next_time = "004";
-    }
-    else if (current >= 11 * 60 + 45 && current < 12 * 60 + 35) {
+    else if (current >= 11 * 60 + 45 && current < 12 * 60 + 35)
         time = "004";
-        next_time = "005";
-    }
-    else if (current >= 12 * 60 + 35 && current < 13 * 60 + 25) {
+    else if (current >= 12 * 60 + 35 && current < 13 * 60 + 25)
         time = "005";
-        next_time = "006";
-    }
-    else if (current >= 13 * 60 + 25 && current < 14 * 60 + 30) {
+    else if (current >= 13 * 60 + 25 && current < 14 * 60 + 30)
         time = "006";
-        next_time = "007";
-    }
-    else if (current >= 14 * 60 + 30 && current < 15 * 60 + 20) {
-        time = "007"; //
-        next_time = "000";
-    }
+    else if (current >= 14 * 60 + 30 && current < 15 * 60 + 20)
+        time = "007";
     else
-        time = "000"; // 
-
+        time = "000";
 
 
 
     if (time == "000") {
 
-        // max = 7th period
         //document.getElementById("running_class").style.display = "none";
 
     } else {
@@ -71,9 +51,8 @@ function generateRoutine() {
 
 
 
-
-        // children
         var children = document.getElementById(time).childNodes;
+
         for (var i = 0; i < children.length; i++) {
 
             var classes = children[i].classList;
@@ -89,7 +68,6 @@ function generateRoutine() {
 
             for (var j = 0; j < classes.length; j++) {
 
-                // Today class highlight
                 if (classes[j] == "d" + today) {
 
                     var highlight_id = document.getElementById("highlight");
@@ -102,65 +80,13 @@ function generateRoutine() {
 
                 }
 
-
-
             }
 
-        }
-
-
-
-        if (next_time == "000") {
-            // it is last period
-            document.getElementById("nextclass_card").style.display = "none";
-        } else {
-
-
-
-
-            // next class available
-
-            // next_children
-            var next_children = document.getElementById(next_time).childNodes;
-            for (var i = 0; i < next_children.length; i++) {
-
-                var next_classes = next_children[i].classList;
-
-                if (!next_classes) {
-
-                    continue;
-
-                }
-
-
-
-
-                for (var j = 0; j < next_classes.length; j++) {
-
-                    // Today class highlight
-                    if (next_classes[j] == "d" + today) {
-
-                        var next_highlight_id = document.getElementById("next_highlight");
-
-                        if (next_highlight_id) {
-                            next_highlight_id.setAttribute("id", "");
-                        }
-
-                        next_children[i].setAttribute("id", "next_highlight");
-
-                    }
-
-
-
-                }
-
-            }
         }
 
     }
 
     running_class();
-    next_class();
 
 }
 
@@ -225,31 +151,12 @@ function running_class() {
     var running_class_div = document.getElementById("running_class");
 
     if (highlighted_text != "") {
-        running_class_div.innerText = highlighted_text;
+        running_class_div.innerText = "এখন চলছে \"" + highlighted_text + "\" ক্লাস";
     } else {
         running_class_div.innerText = "এখন ক্লাস বন্ধ";
     }
 
     running_class_div.style.display = "block";
-
-
-}
-
-//next class function
-function next_class() {
-
-
-    var next_highlighted_text = document.getElementById("next_highlight").innerText;
-
-    var next_class_div = document.getElementById("next_class");
-
-    if (next_highlighted_text != "") {
-        next_class_div.innerText = next_highlighted_text;
-    } else {
-        next_class_div.innerText = "এখন ক্লাস বন্ধ";
-    }
-
-    next_class_div.style.display = "block";
 
 
 }

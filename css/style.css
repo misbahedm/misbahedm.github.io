@@ -1,26 +1,31 @@
 body {
     background-color: white;
-    
+    font-size: 20px;
 }
 
 .stressful {
     background-color: darkRed;
 }
 
+.clock {
+    position: static;
+    top: 0;
+    background-color: #f1c40f;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 2px #f39c12;
+    right: 0%;
+    display: block;
+    transform: auto;
+    color: black;
+    font-size: 50px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    border-radius: 25px;
 
-    
-    
 
-    
-    
-    
-    
-    
-   
-    
-    
-
-
+    animation:  bounceIn 2s ease-in-out 3s;
+}
 
 .date_div {
     font-size: 30px;
@@ -39,45 +44,47 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, rgb(202, 153, 79));
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
-    
+    display: none;
 }
 
-
-.nextClassStyle {
+h1 {
     border: solid 10px;
     border-radius: 25px;
-    font-size: 20px;
     border: 0;
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    background: linear-gradient(45deg, #23A6D5, #23D5AB);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-    
+    background-image: linear-gradient(#22c1c3, lightgreen);
+    -webkit-box-shadow: 17px -2px 46px 23px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 17px -2px 46px 23px rgba(0, 0, 0, 0.21);
+    box-shadow: 17px -2px 46px 23px rgba(0, 0, 0, 0.14);
 }
-
-
-
-
-
 
 table {
     border-collapse: collapse;
-    
-    
-    
-    
+    border-color: black;
+    border: solid;
+    margin: 0px auto;
+    margin-top: 50px;
 }
 
+th, td {
+    padding: 8px;
+    border: 1px solid green;
+    text-align: left;
+    border-bottom: 1px solid green;
+    border-color: green 3px;
+}
+
+th {
+    border: solid 3px;
+    border-color: green;
+}
 
 td:hover {
     background-color: #cbd1cd;
@@ -90,15 +97,36 @@ img {
 }
 
 .days {
-    
-    
+    border: solid 3px;
+    border-color: gray;
     background-color: whitesmoke;
     color: black;
-    
-    
+    font-family: 'Roboto', ;
 }
 
+.lecture {
+    background-color: #d4fbce;
+    color: black;
+    border: solid 1px;
+    border-color: dimgray;
+    font-family: 'Roboto', ;
+}
 
+.lab {
+    background-color: #d4fbce;
+    color: black;
+    border: solid 1px;
+    border-color: dimgray;
+    font-family: 'Roboto', ;
+}
+
+caption {
+    display: table-caption;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 2px 0px;
+}
 
 .name, .time {
     font-family: 'Roboto', ;
