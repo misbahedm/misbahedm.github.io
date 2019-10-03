@@ -2,6 +2,36 @@ body {
     background-color: white;
     font-size: 20px;
 }
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.clock_header{
+    position: fixed;
+    width: 100%;
+    z-index: 111;
+    top:0;
+    left: 0;
+}
+.my_routine{
+    height: 100%;
+    width: 100%;
+    margin-top:100px;
+}
+.card{
+    margin: 10px 0px;
+}
+.btn-group-vertical{
+    width: 100%;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-group-vertical button{
+    margin: 10px;
+    padding: 30px;
+}
 
 .stressful {
     background-color: darkRed;
@@ -56,7 +86,6 @@ h1 {
     -moz-box-shadow: 17px -2px 46px 23px rgba(0, 0, 0, 0.21);
     box-shadow: 17px -2px 46px 23px rgba(0, 0, 0, 0.14);
 }
-
 table {
     border-collapse: collapse;
     border-color: black;
@@ -79,7 +108,15 @@ th {
 }
 
 td:hover {
-    background-color: #cbd1cd;
+   background-color: #FF3CAC;
+   color:black;
+   outline: 3px dashed #fff;
+    outline-offset: -6px;
+    transition: outline-offset .2s ease-in-out;
+
+   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+
 }
 
 img {
