@@ -151,9 +151,9 @@ function running_class() {
     var running_class_div = document.getElementById("running_class");
 
     if (highlighted_text != "") {
-        running_class_div.innerText = "এখন চলছে \"" + highlighted_text + "\" ক্লাস";
+        running_class_div.innerText = "Is going on now \"" + highlighted_text + "\" Class";
     } else {
-        running_class_div.innerText = "এখন ক্লাস বন্ধ";
+        running_class_div.innerText = "Now the class is off";
     }
 
     running_class_div.style.display = "block";

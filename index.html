@@ -4,20 +4,33 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Pacifico" rel="stylesheet">
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
     <script src="js/bootstrap.min.js"></script>
 
 
     <script src="js/main.js"></script>
 
-    <title>7th Semester timetable</title>
+    <title>7th Semester time table</title>
 </head>
 
 <body>
+
+
+
+    <div class="Wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
 
     <div class="clock">
         <div id="MyDateDisplay" class="date_div"></div>
@@ -27,8 +40,11 @@
 <button onclick="window.location.href = 'http://hyperurl.co/owah7l';" class="btn" style="width:100%"><i class="fa fa-download"></i> Download App</button>
 
     <div>
-      <h1 class="display-4 text-center">৭ম সেমিস্টার ক্লাস রুটিন</h1>
+
+        <div class="headding">
+      <h1 class="display-4 text-center">Seven Semester Class Routine</h1>
     </div>
+</div>
 	
 	
 
@@ -37,8 +53,7 @@
 	
 	
 
-    <div class="runningClassStyle" id="running_class"></div>
-
+    <div class="runningClassStyle sub-hadding" id="running_class"></div>
 
 
 
@@ -51,34 +66,41 @@
           https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay -->
 
 
-<table border="0">
+<div class="table-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                
+            
+    
+<table class="full-table-area">
 
         <tr class="days">
             <th class="name">
-                <h5>ক্লাস</h5>
+                <h5>Class Time</h5>
             </th>
             <th class="d6">
-                <h5>শনিবার</h5>
+                <h5>Saturday</h5>
             </th>
             <th class="d0">
-                <h5>রবিবার</h5>
+                <h5>Sunday</h5>
             </th>
             <th class="d1">
-                <h5>সোমবার</h5>
+                <h5>Monday </h5>
             </th>
             <th class="d2">
-                <h5>মঙ্গলবার</h5>
+                <h5>Tuesday</h5>
             </th>
             <th class="d3">
-                <h5>বুধবার</h5>
+                <h5>Wednesday</h5>
             </th>
             <th class="d4">
-                <h5>বৃহস্পতিবার</h5>
+                <h5>Thursday</h5>
             </th>
         </tr>
 
         <tr id="001">
-            <td class="t1"><h5>৯.১৫ - ১০.৫</h5></td>
+            <td class="t1"><h5> 9.15 - 10.05</h5></td>
             <td class="d6">Network Administration &amp; Services (RB) NET_LAB</td>
             <td class="d0">Apps Development Project(RB) NET_LAB</td>
             <td class="d1">Network Administration & Services (RB) NET_LAB</td>
@@ -88,8 +110,8 @@
         </tr>
 
         <tr id="002">
-            <td class="t2">
-                <h5>১০.৫-১০.৫৫</h5>
+            <td class="t1">
+                <h5>10.05 - 10.55</h5>
             </td>
             <td class="d6">Network Administration &amp; Services (RB) NET_LAB</td>
             <td class="d0">Apps Development Project(RB) NET_LAB</td>
@@ -100,8 +122,8 @@
         </tr>
 
         <tr id="003">
-            <td class="t3">
-                <h5>১০.৫৫-১১.৪৫</h5>
+            <td class="t1">
+                <h5>10.55 - 11.45</h5>
             </td>
             <td class="d6">Network Administration &amp; Services (RB) NET_LAB</td>
             <td class="d0">Apps Development Project(RB) NET_LAB</td>
@@ -112,8 +134,8 @@
         </tr>
 
         <tr id="004">
-            <td class="t4">
-                <h5>১১.৪৫-১২.৩৫</h5>
+            <td class="t1">
+                <h5>11.45 - 12.35</h5>
             </td>
             <td class="d6">E-Commerce &amp; CMS (SS) NET_LAB</td>
             <td class="d0">E-Commerce &amp; CMS (SS) (103)</td>
@@ -124,8 +146,8 @@
         </tr>
 
         <tr id="005">
-            <td class="t5">
-                <h5>১২.৩৫- ১.২৫</h5>
+            <td class="t1">
+                <h5>12.35 - 01.25</h5>
             </td>
             <td class="d6">System Analysis &amp; Design (FS) INT_LAB </td>
             <td class="d0">System Analysis &amp; Design (FS) (103)</td>
@@ -136,9 +158,9 @@
         </tr>
 
         <tr id="006">
-            <td class="t6"><h5>১.৪০-২.৩০</h5></td>
+            <td class="t1"><h5>01.40 - 02.30</h5></td>
             <td class="d6">System Analysis & Design (FS)  INT_LAB
-</td>
+            </td>
             <td class="d0">&nbsp;</td>
             <td class="d1">Advanced Database Management System (SS) SOFT_LAB</td>
             <td class="d2">Cyber Security &amp; Ethics (RB) NET_LAB</td>
@@ -148,23 +170,29 @@
 
 
         <tr id="007">
-            <td class="t7"><h5>২.৩০-৩.২০</h5></td>
+            <td class="t1"><h5>02.30 - 03.20</h5></td>
             <td class="d6">System Analysis & Design (FS)  INT_LAB
 </td>
             <td class="d0"></td>
             <td class="d1">Advanced Database Management System (SS) SOFT_LAB</td>
             <td class="d2">Cyber Security &amp; Ethics (RB) NET_LAB</td>
-          <td class="d3">E-Commerce & CMS  (SS)
-NET_LAB
+          <td class="d3">E-Commerce & CMS  (SS)NET_LAB
 </td>
             <td class="d4"></td>
         </tr>
 
 
     </table>
+    </div>
+        </div>
+    </div>
+</div>
 
 
-
+</div>
+  </div>
+        </div>
+    </div>
 
 </body>
 
