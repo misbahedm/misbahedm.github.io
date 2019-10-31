@@ -129,7 +129,7 @@ function showDate() {
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     var date_div = new Date();
 
-    date_div = date_div.toLocaleDateString("bn-BD", options);
+    date_div = date_div.toLocaleDateString("eng", options);
 
 
     document.getElementById("MyDateDisplay").innerText = date_div;
