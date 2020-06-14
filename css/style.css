@@ -4,7 +4,10 @@
    
 }
 
-
+#videothumbnail{
+    height: 50%;
+    width: 50%;
+    float: center;}
 
 .full-table-area{
     font-size: 12px;
