@@ -4,6 +4,11 @@
    
 }
 
+
+.social a {
+    padding: 0 .5em;
+  }
+
 #videothumbnail{
     height: 50%;
     width: 50%;
