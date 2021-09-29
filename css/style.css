@@ -84,13 +84,41 @@
     
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: white;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(-45deg, #23A6D5, #23D5AB);
+    text-decoration: none;
+  }
+
+  
 .headding h1 {
 
      font-weight: 700;
     font-size: 29px;
     text-transform: capitalize;
     font-family: 'Josefin Sans', sans-serif;
-   
+    border-radius: 25px;
     
     padding: 5px;
     text-align: center;
@@ -222,12 +250,14 @@ caption {
 
 
 .btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
+  background-color: white;
+  border: 10px;
+  color: rgb(199, 90, 36);
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  
+  
 }
 
 
@@ -236,6 +266,15 @@ caption {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: rgb(231, 144, 86);
+  
 }
+
+
+
+
+
+
+
+
 
